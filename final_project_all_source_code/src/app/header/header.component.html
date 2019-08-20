@@ -1,0 +1,149 @@
+<!-- <div class="grid">
+    <ag-grid-angular 
+   
+    style="width:650px ;height:400px;"
+    class="ag-theme-balham"
+    
+    [columnDefs]="columnDefs"
+    
+(gridReady)="onGridReady($event)"
+    >
+</ag-grid-angular> 
+<hr>
+<button class="btn btn-default" (click)="exportAsXLSX()">Download as Excel</button>
+</div>    -->
+<!-- <div class="tabdata">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+    <table id="myTable" border="2px solid black">
+        <tr>
+          <th>EmployeeId</th>
+          <th>EmployeeName</th>
+        
+          <th>Skill</th>
+          <th>Grade</th>
+          <th>TrainingStartDate</th>
+          <th>TrainingCompleteDate</th>
+          
+        </tr>
+        <tr *ngFor="let items of employees">
+        <td>{{items.employeeId}}</td>
+        <td>{{items.employeeName}}</td>
+        <td>{{items.skill}}</td>
+        <td>{{items.grade}}</td>
+        <td>{{items.trainingStartDate}}</td>
+        <td>{{items.trainingCompletionDate}}</td>
+        
+        </tr>
+        
+        
+      
+        
+         </table>
+         <button class="btn btn-primary" (click)="exportAsXLSX()">Download as Excel</button>
+
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12 mx-auto">
+        <div class="md-form">
+          <input type="text" [(ngModel)]="searchText" class="form-control" id="search" mdbInput>
+          <label for="search">Search</label>
+        </div>
+      </div>
+    </div>
+    <table mdbTable class="z-depth-1" border="2px solid black">
+      <thead>
+      <tr>
+      
+        <th>EmployeeId</th>
+        <th>EmployeeName</th>
+      
+        <th>Skill</th>
+        <th>Grade</th>
+        <th>TrainingStartDate</th>
+        <th>TrainingCompleteDate</th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let el of employees; let i = index">
+        <th scope="row">{{el.employeeId}}</th>
+        <td class="red-text">{{el.employeeName}}</td>
+        <td>{{el.skill}}</td>
+        <td>{{el.grade}}</td>
+
+        <td>{{el.trainingStartDate}}</td>
+        <td>{{el.trainingCompletionDate}}</td>
+
+      </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-primary" (click)="exportAsXLSX()">Download as Excel</button>
+
+  </div> -->
+  <div class="grid">
+      <ag-grid-angular 
+      #agGrid
+      style="width:650px ;height:200px;"
+      class="ag-theme-balham"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs"
+      rowSelection="multiple"
+     [enableRangeSelection]="true"
+     rowSelection="multiple"
+     [pagination]="true"
+  
+      >
+  </ag-grid-angular> 
+  <hr>
+  <button class="btn btn-primary" (click)="exportAsXLSX()" (click)="changeBenchToDeploy()">Download as Excel</button>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   

@@ -1,0 +1,91 @@
+<div class="header">
+        <div class="logo">
+            <i class="fa fa-tachometer"></i>
+            <span>Smart Deploy</span>
+        </div>
+        <a href="#" class="nav-trigger"><span></span></a>
+      </div>
+      
+      <div class="side-nav">
+        <div class="logo">
+            <i class="fa fa-bar-chart" style="font-size:20px; color:#0497DF;"></i>
+            <span class="navbar-brand">Smart Deploy</span>
+            
+             
+              
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <span><i class="fa fa-user"></i></span>
+                        <span>Welcome {{managerName}}</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><i class="fa fa-envelope"></i></span>
+                        <span>Messages</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <span><i class="fa fa-bar-chart"></i></span>
+                        <span>Analytics</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        
+                        <span><i class="fa fa-unlock"></i></span>
+                        <span>Logout</span>
+                        
+                    </a>
+                </li>
+      
+            </ul>
+        </nav>
+      </div>
+      <div class="main-content">
+            <carousel (activeSlideChange)="log($event)" [showIndicators]="false" [interval]="myInterval" [noPause]="false">
+                    <slide>
+                      <div class="text-center py-5  bg-dark text-white">
+                        <h2>Ajay P</h2>
+                       
+                        <div class="lead">
+                            <h3>Learning and Development Department</h3>
+                          <p>Capgemini</p>
+                          <button class="btn btn-primary" (click)="getReport()" >Get Details</button>
+                        </div>
+                      </div>
+                    </slide>
+                    <slide>
+                      <div class="text-center py-5 bg-dark text-white">
+                        <h2>Tanmay A</h2>
+                        <div class="lead">
+                            <h3>Learning and Development Department</h3>
+                            <p>Capgemini</p>
+                            <button class="btn btn-primary" (click)="getReport()">Get Details</button>
+                          </div>
+                      </div>
+                    </slide>
+                    <slide>
+                      <div class="text-center py-5 bg-dark text-white">
+                        <h2>Nitin Joshi</h2>
+                        <div class="lead">
+                            <h3>GEE Manager</h3>
+                            <p>Capgemini</p>
+                            <button class="btn btn-primary" (click)="getReport()">Get Details</button>
+                          </div>
+                      </div>
+                    </slide>
+                  </carousel>
+                  <div class="piec"><a class="btn" ><highcharts-chart 
+                    [Highcharts] = "highcharts" 
+                    [options] = "chartOptions" 
+                    style = "width: 100%; height: 400px; display: block;"></highcharts-chart></a></div>
+      </div>
+
+      <br/>
+    <!-- <pre class="card card-block card-header">{{slideChangeMessage}}</pre> -->
+    
